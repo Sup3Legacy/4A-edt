@@ -7,22 +7,19 @@
 
 // Edit this: uncomment exactly the classes you take
 #let chosen = tt.ret(tt.array(classes.Class), (
+  ext.inte_proba_1,
   /* === Monday === */
   /*--  8h45 --*/
-  mpri.proof_asst,
 //mpri.automata_mod,
   /*-- 12h45 --*/
 //mpri.symbolic_dyn,
-  mpri.advanced_verif,
   /*-- 16h15 --*/
-  mpri.proof_systems,
 //mpri.algo_wqo,
-  mpri.network_mod,
 //mpri.biochem_prog,
 
   /* === Tuesday === */
+  ext.hackens,
   /*--  8h45 --*/
-  mpri.sync_sys,
 //mpri.sec_protocols,
   /*-- 12h45 --*/
 //mpri.lang_mod,
@@ -34,12 +31,11 @@
 //mpri.poly_sys,
 
   /* === Wednesday === */
+  ext.cogsci_101,
   /*--  8h45 --*/
 //mpri.cryptanalysis,
 //mpri.error_corr,
-  mpri.da_networks,
   /*-- 12h45 --*/
-  mpri.fp_and_types,
 //mpri.combinatorics,
   /*-- 16h15 --*/
 //mpri.analysis_algo,
@@ -61,14 +57,11 @@
   /* === Friday === */
   /*--  8h45 --*/
 //mpri.arith_crypto,
-  mpri.concurrency,
 //mpri.uncertainty,
 //mpri.proof_of_prog,
   /*-- 12h45 --*/
-  mpri.da_shared,
 //mpri.game_theory,
   /*-- 16h15 --*/
-  mpri.categories,
 //mpri.algo_verif,
 //mpri.data_analysis,
 ))

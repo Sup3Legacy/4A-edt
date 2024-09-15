@@ -57,6 +57,12 @@
 // see `demo/ext.typ` for details
 #let intro_to_bullshit = classes.new(other, fmt, [Introduction to Bullshit], none, [Whatever])
 
+#let inte_proba_1 = classes.new(other, fmt, [Inté proba], none, [N. Enriquez])
+
+#let cogsci_101 = classes.new(other, fmt, [CogSci 101], none, [])
+
+#let hackens = classes.new(other, fmt, [Hackens], none, [])
+
 // Then create a new slot in the correct day.
 // This is done through the function
 //    `classes.slot(my_new_class, Room, start: starting-time, len: length, sem: semester, etcs: credits)`
@@ -69,11 +75,15 @@
 // - `credits` (integer) is however may ECTS credits this class will grant
 #let week = tt.ret(classes.Week, (
   mon: (
+    classes.slot(inte_proba_1, [Galois], start: time.from-hm(8, 30), len: time.from-hm(1, 30), sem:(1,2), ects:12),
     classes.slot(intro_to_bullshit, [in Hell], start: time.from-hm(9,42), len: time.from-hm(3,14), sem:(2,), ects: 1000),
   ),
   tue: (
+    classes.slot(inte_proba_1, [Cartan], start: time.from-hm(8, 30), len: time.from-hm(1, 30), sem:(1,2), ects:12),
+    classes.slot(hackens, [Hackens], start: time.from-hm(18, 00), len: time.from-hm(4, 0), sem: (1,2), ects:0),
   ),
   wed: (
+    classes.slot(cogsci_101, [Assia Djebar, 29 rue d'Ulm], start: time.from-hm(14, 0), len: time.from-hm(2, 0), sem:(1,2), ects: 3),
   ),
   thu: (
   ),
